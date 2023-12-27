@@ -1,0 +1,245 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #333;
+}
+
+p {
+  font-size: small;
+  line-height: 1.5rem;
+  font-weight: 500;
+}
+@media (min-width: 1024px) {
+  p {
+    font-weight: 600;
+  }
+}
+
+.hero-image {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  background-image: url("assets/bg-main-mobile.png");
+  background-position: right 200% top -250%;
+  background-repeat: no-repeat;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .hero-image {
+    background-image: url("assets/bg-pattern-1.svg"), url("assets/bg-main-tablet.png");
+    background-position: right -10% top -10%, right top 100%;
+    background-repeat: no-repeat, no-repeat;
+  }
+}
+@media (min-width: 1024px) {
+  .hero-image {
+    background-image: url("assets/bg-pattern-1.svg"), url("assets/bg-main-desktop.png");
+    background-position: right top -5%, right top 20%;
+    background-repeat: no-repeat, no-repeat;
+  }
+}
+
+nav {
+  padding: 10% 5%;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  nav {
+    padding: 10% 5% 5%;
+  }
+}
+@media (min-width: 1024px) {
+  nav {
+    padding: 5% 10%;
+  }
+}
+
+.hero-text {
+  padding: 0 5% 5%;
+  margin-bottom: 25%;
+  font-size: 1rem;
+}
+.hero-text h1 {
+  font-size: 2.5rem;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .hero-text {
+    padding: 0 35% 5% 5%;
+  }
+  .hero-text h1 {
+    font-size: 3rem;
+  }
+}
+@media (min-width: 1024px) {
+  .hero-text {
+    padding: 0 35% 5% 10%;
+  }
+  .hero-text h1 {
+    font-size: 4rem;
+  }
+}
+
+.main-background {
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("assets/bg-pattern-2.svg");
+  background-color: black;
+  width: 100%;
+  background-position: center top;
+  /* Horizontal position Vertical position */
+  background-repeat: no-repeat;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .main-background {
+    margin-bottom: 15%;
+  }
+}
+@media (min-width: 1024px) {
+  .main-background {
+    width: 80%;
+    margin: 10%;
+  }
+}
+.main-background .app-image-overlay {
+  width: 50%;
+  margin-top: -20%;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .main-background .app-image-overlay {
+    width: 35%;
+    margin-left: -45%;
+    margin-bottom: 30%;
+  }
+}
+@media (min-width: 1024px) {
+  .main-background .app-image-overlay {
+    width: 25%;
+    margin-left: -45%;
+    margin-bottom: 10%;
+  }
+}
+.main-background .cta-overlay {
+  margin-top: 10%;
+  background-color: #fa7453;
+  border-radius: 15px;
+  color: white;
+  padding: 10%;
+}
+.main-background .cta-overlay .price-row {
+  padding: 10% 5% 10% 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-start;
+}
+.main-background .cta-overlay .price-row .price {
+  font-size: 4rem;
+  font-weight: bold;
+}
+.main-background .cta-overlay .apple_btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-items: start;
+  background-color: #191826;
+  color: #fcfaf9;
+  width: 100%;
+  padding: 1rem 2rem;
+  border-radius: 15px;
+  border: none;
+  cursor: pointer;
+}
+.main-background .cta-overlay .apple_btn:hover {
+  background-color: #66e2dc;
+}
+.main-background .cta-overlay .android_btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-items: start;
+  background-color: #fcfaf9;
+  color: #191826;
+  width: 100%;
+  padding: 1rem 2rem;
+  border-radius: 15px;
+  border: none;
+  cursor: pointer;
+}
+.main-background .cta-overlay .android_btn:hover {
+  background-color: #ffb964;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .main-background .cta-overlay {
+    position: absolute;
+    width: 40%;
+    margin-left: 15%;
+    margin-top: 20%;
+  }
+}
+@media (min-width: 1024px) {
+  .main-background .cta-overlay {
+    padding: 2.5%;
+    position: absolute;
+    width: 20%;
+    margin-left: 35%;
+    margin-top: 20%;
+  }
+  .main-background .cta-overlay .apple_btn,
+  .main-background .cta-overlay .android_btn {
+    font-weight: bold;
+  }
+  .main-background .cta-overlay h1 {
+    font-size: 2rem;
+  }
+  .main-background .cta-overlay p {
+    font-weight: 500;
+  }
+}
+
+footer {
+  padding: 10% 5%;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  footer .footer-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+  }
+  footer .social-media {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+@media (min-width: 1024px) {
+  footer {
+    padding: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+  }
+  footer .footer-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5%;
+  }
+  footer .social-media {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+  }
+}/*# sourceMappingURL=styles.css.map */
